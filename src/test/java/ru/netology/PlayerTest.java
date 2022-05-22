@@ -27,7 +27,7 @@ public class PlayerTest {
     // другие ваши тесты
 
     @Test
-    public void shouldSumGenreIfMoreThenOneGame() {
+    public void shouldSumGenreIfMoreThanOneGame() {
         GameStore store = new GameStore();
         Game game1 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
         Game game2 = store.publishGame("Java-викторина", "Аркады");
@@ -47,7 +47,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void shouldSumGenreIfMoreThenOneGameWithDifferentGenre() {
+    public void shouldSumGenreIfMoreThanOneGameWithDifferentGenre() {
         GameStore store = new GameStore();
         Game game1 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
         Game game2 = store.publishGame("Крутой java-программист", "Симуляторы");
@@ -84,7 +84,7 @@ public class PlayerTest {
 
     @Test
     @Disabled
-    public void shouldInstallMoreThenOneGame() {
+    public void shouldInstallMoreThanOneGame() {
         GameStore store = new GameStore();
         Game game1 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
         Game game2 = store.publishGame("Java Баттл Онлайн", "Аркады");
@@ -103,7 +103,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void shouldPlayIfOneTime () {
+    public void shouldPlayIfOneTime() {
         GameStore store = new GameStore();
         Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
         Player player = new Player("Petya");
@@ -115,7 +115,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void shouldPlayIfMoreThanOneTime () {
+    public void shouldPlayIfMoreThanOneTime() {
         GameStore store = new GameStore();
         Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
         Player player = new Player("Petya");
